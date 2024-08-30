@@ -1,4 +1,4 @@
-<div class="border-l-2 border-primary-400 px-4 py-2 dark:border-primary-600 flex flex-col">
-    <b class="text-primary-700 dark:text-primary-400">{{ .Get "title" }}</b> 
-    {{ .Inner | markdownify }} 
+<div class="border-l-2 border-primary-400 px-4 py-2 dark:border-primary-600 flex-col">
+    <b class="text-primary-700 dark:text-primary-400">{{ .Get "title" }}</b>&emsp;
+    {{- .Inner | markdownify -}}
 </div>

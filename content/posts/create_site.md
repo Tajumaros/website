@@ -47,8 +47,13 @@ draft = false
 <link ... href="/img/apple-touch-icon.png">
 ```
 に修正すればよい．
-- **数式まわりの話**  
+### Hugoまわり
+- **数式の改行の話**  
 数式は Blowfish により KaTex を用いて記述できるようだが，`align` 環境での改行の挙動が少しおかしいので，Hugo の自体を KaTex に対応させるのが無難だと思われる．今回は Hugo の公式ドキュメント https://gohugo.io/content-management/mathematics/ と https://kuroyei.com/blog/2024/hugo_katex_no_break_lines_issue/ の通りに設定してうまくいった．
+
+- **大小記号のはなし**  
+大小関係 `<`,`>` をそのまま使うとうまく表示されない場合がある．
+`\lt`, `\gt`を使おう．
 
 - **日付表示の話**  
 これは Hugo が悪いのだが，日付設定のフォーマットが信じられない．
