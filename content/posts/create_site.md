@@ -42,11 +42,18 @@ draft = false
 ```
 みたいな部分を
 ```
+<link ... href="./img/favicon-32x32.png">
+<link ... href="./img/favicon-16x16.png">
+<link ... href="./img/apple-touch-icon.png">
+```
+に修正すればよい．
+元サイトでは
+```
 <link ... href="/img/favicon-32x32.png">
 <link ... href="/img/favicon-16x16.png">
 <link ... href="/img/apple-touch-icon.png">
 ```
-に修正すればよい．
+になっているが，`/img`ではなく`./img`じゃないとダメっぽい．
 ### Hugoまわり
 - **数式の改行の話**  
 数式は Blowfish により KaTex を用いて記述できるようだが，`align` 環境での改行の挙動が少しおかしいので，Hugo の自体を KaTex に対応させるのが無難だと思われる．今回は Hugo の公式ドキュメント https://gohugo.io/content-management/mathematics/ と https://kuroyei.com/blog/2024/hugo_katex_no_break_lines_issue/ の通りに設定してうまくいった．
