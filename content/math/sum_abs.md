@@ -8,12 +8,13 @@ tags = ['math']
 本質的には場合分けをするのと変らないので，単に時短テクである．
 
 {{<thmbox title="命題">}}
-$X,Y,a\in\mathbb{R}$ とするとき，
+$(X,\|\cdot\|)$ をノルム空間とする．
+このとき，任意の $x,y\in X,a\in\mathbb{R}$ に対して
 $$
-|X|+|Y|\leqslant a\quad\Longleftrightarrow\quad
+|x|+|y|\leqslant a\quad\Longleftrightarrow\quad
 \begin{cases}
-|X+Y|\leqslant a \\
-|X-Y|\leqslant a
+|x+y|\leqslant a \\
+|x-y|\leqslant a
 \end{cases}
 $$
 が成り立つ．
@@ -23,7 +24,7 @@ $$
 $\Rightarrow$ は三角不等式より明らかである．
 逆も
 $$
-|X|+|Y|=\frac{|X+Y+(X-Y)|}{2}+\frac{|X+Y-(X-Y)|}{2}
+|x|+|y|=\frac{|(x+y)+(x-y)|}{2}+\frac{|x+y-(x-y)|}{2}
 $$
 と分解して三角不等式を用いればよい．
 {{<qed>}}
