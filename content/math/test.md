@@ -2,7 +2,7 @@
 title = '３回合成して恒等写像になる実数上の函数'
 date = 2024-08-30T06:54:10+09:00
 draft = false
-tags = ['math']
+tags = ['数学']
 +++
 {{<thmbox title="命題">}}
 実数上の連続函数 $f\colon\mathbb{R}\to\mathbb{R}$ で，$f\circ f\circ f=\mathrm{id}$ となるものは，恒等写像のみ．
